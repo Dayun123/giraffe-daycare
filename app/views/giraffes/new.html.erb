@@ -1,0 +1,18 @@
+<h1>Create a giraffe</h1>
+
+<%= form_for @giraffes do |giraffe_fields| %>
+
+  <%= giraffe_fields.label :name %>
+  <%= giraffe_fields.text_field :name %><br>
+
+  <%= giraffe_fields.label :color %>
+  <%= giraffe_fields.text_field :color %><br>
+
+  <%= giraffe_fields.label :age %>
+  <%= giraffe_fields.number_field :age %><br>
+
+  <%= giraffe_fields.submit %>
+
+<% end %>
+
+<%= link_to 'List Giraffes', giraffes_url %>

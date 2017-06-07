@@ -1,0 +1,22 @@
+<h1>Your Giraffes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Color</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @giraffes.each do |giraffe| %>
+      <tr>
+        <td><%= giraffe.name %></td>
+        <td><%= giraffe.color %></td>
+        <td><%= giraffe.age %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Add a Giraffe', new_giraffe_url %>
